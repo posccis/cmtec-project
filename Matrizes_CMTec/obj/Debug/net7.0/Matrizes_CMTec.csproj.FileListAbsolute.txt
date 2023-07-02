@@ -1,0 +1,15 @@
+D:\victor\estudos\programming\teste_cmtecnologia\Matrizes_CMTec\Matrizes_CMTec\bin\Debug\net7.0\Matrizes_CMTec.exe
+D:\victor\estudos\programming\teste_cmtecnologia\Matrizes_CMTec\Matrizes_CMTec\bin\Debug\net7.0\Matrizes_CMTec.deps.json
+D:\victor\estudos\programming\teste_cmtecnologia\Matrizes_CMTec\Matrizes_CMTec\bin\Debug\net7.0\Matrizes_CMTec.runtimeconfig.json
+D:\victor\estudos\programming\teste_cmtecnologia\Matrizes_CMTec\Matrizes_CMTec\bin\Debug\net7.0\Matrizes_CMTec.dll
+D:\victor\estudos\programming\teste_cmtecnologia\Matrizes_CMTec\Matrizes_CMTec\bin\Debug\net7.0\Matrizes_CMTec.pdb
+D:\victor\estudos\programming\teste_cmtecnologia\Matrizes_CMTec\Matrizes_CMTec\obj\Debug\net7.0\Matrizes_CMTec.csproj.AssemblyReference.cache
+D:\victor\estudos\programming\teste_cmtecnologia\Matrizes_CMTec\Matrizes_CMTec\obj\Debug\net7.0\Matrizes_CMTec.GeneratedMSBuildEditorConfig.editorconfig
+D:\victor\estudos\programming\teste_cmtecnologia\Matrizes_CMTec\Matrizes_CMTec\obj\Debug\net7.0\Matrizes_CMTec.AssemblyInfoInputs.cache
+D:\victor\estudos\programming\teste_cmtecnologia\Matrizes_CMTec\Matrizes_CMTec\obj\Debug\net7.0\Matrizes_CMTec.AssemblyInfo.cs
+D:\victor\estudos\programming\teste_cmtecnologia\Matrizes_CMTec\Matrizes_CMTec\obj\Debug\net7.0\Matrizes_CMTec.csproj.CoreCompileInputs.cache
+D:\victor\estudos\programming\teste_cmtecnologia\Matrizes_CMTec\Matrizes_CMTec\obj\Debug\net7.0\Matrizes_CMTec.dll
+D:\victor\estudos\programming\teste_cmtecnologia\Matrizes_CMTec\Matrizes_CMTec\obj\Debug\net7.0\refint\Matrizes_CMTec.dll
+D:\victor\estudos\programming\teste_cmtecnologia\Matrizes_CMTec\Matrizes_CMTec\obj\Debug\net7.0\Matrizes_CMTec.pdb
+D:\victor\estudos\programming\teste_cmtecnologia\Matrizes_CMTec\Matrizes_CMTec\obj\Debug\net7.0\Matrizes_CMTec.genruntimeconfig.cache
+D:\victor\estudos\programming\teste_cmtecnologia\Matrizes_CMTec\Matrizes_CMTec\obj\Debug\net7.0\ref\Matrizes_CMTec.dll
