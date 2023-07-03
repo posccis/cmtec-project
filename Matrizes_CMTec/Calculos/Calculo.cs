@@ -34,7 +34,7 @@ namespace Matrizes_CMTec.Calculos
                     Console.WriteLine("Insira a matriz quadrada.");
                     Console.Write("Quantas linhas possui a sua matriz? ");
                     var qntLinhas = Int32.Parse(Console.ReadLine());
-                    if (qntLinhas <= 1) throw new MatrizesException("Por ser uma matriz quadrada, é necessário que possua pleo menos 2 linhas e 2 colunas.");
+                    if (qntLinhas <= 1) throw new MatrizesException("Por ser uma matriz quadrada, é necessário que possua pelo menos 2 linhas e 2 colunas.");
                     return qntLinhas;
                 }
                 catch (MatrizesException mt)

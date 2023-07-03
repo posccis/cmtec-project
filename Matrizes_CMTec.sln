@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matrizes_CMTec", "Matrizes_CMTec\Matrizes_CMTec.csproj", "{483DE332-96D3-4C32-94F5-8092FEC65BD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Matrizes_CMTec", "Matrizes_CMTec\Matrizes_CMTec.csproj", "{483DE332-96D3-4C32-94F5-8092FEC65BD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Submatrizes_CMTec", "Submatrizes_CMTec\Submatrizes_CMTec.csproj", "{57E78707-D5C7-4073-A148-8DD155CBB034}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{483DE332-96D3-4C32-94F5-8092FEC65BD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{483DE332-96D3-4C32-94F5-8092FEC65BD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{483DE332-96D3-4C32-94F5-8092FEC65BD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57E78707-D5C7-4073-A148-8DD155CBB034}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57E78707-D5C7-4073-A148-8DD155CBB034}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57E78707-D5C7-4073-A148-8DD155CBB034}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57E78707-D5C7-4073-A148-8DD155CBB034}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
