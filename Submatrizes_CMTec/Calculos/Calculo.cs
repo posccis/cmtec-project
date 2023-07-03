@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Matrizes_CMTec.Exceptions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,10 +19,13 @@ namespace Submatrizes_CMTec.Calculos
             {
                 for (int j = 0; j < matriz[i].Length; j++)
                 {
-                    if((j+qntColunas) < matriz[i].Length)
+                    if((j+qntColunas) < matriz[i].Length && (i+qntLinhas) < matriz.Length)
                     {
                         var subMatrizSec = ConstroiMatriz(matriz, i, j, qntLinhas, qntColunas);
-                        if (subMatrizSec.SequenceEqual(submatriz)) { qnt = qnt + 1; };
+                        if (ComparaMatrizes(submatriz, subMatrizSec)) 
+                        {
+                            qnt = qnt + 1; 
+                        }
                     }
 
                 }
@@ -32,12 +36,29 @@ namespace Submatrizes_CMTec.Calculos
         public string[][] ConstroiMatriz(string[][] matriz, int linha, int coluna, int qntLinhas, int qntCol) 
         {
             var matrizSec = new string[qntLinhas][];
-            for(int i = linha;i < qntLinhas; i++)
+            for(int i = 0;i < qntLinhas; i++)
             {
-                matrizSec[i] = (string[])matriz[i][coluna..(coluna + qntCol)].Clone();
+                matrizSec[i] = (string[])matriz[linha+i][coluna..(coluna + qntCol)].Clone();
             }
             return matrizSec;
         
+        }
+
+        public bool ComparaMatrizes (string[][] subMatriz, string[][] subMatrizsec) 
+        {
+            for(int i = 0; i < subMatrizsec.Length; i++)
+            {
+                for(int j = 0; j < subMatrizsec[i].Length; j++)
+                {
+                    if (subMatriz[i][j] != subMatrizsec[i][j])
+                    {
+                        return false;
+                    }
+
+                }
+            }
+            return true;
+
         }
 
         public string[][] ObtemMatriz() 
@@ -49,20 +70,20 @@ namespace Submatrizes_CMTec.Calculos
                     Console.WriteLine("Insira a matriz.");
                     Console.Write("Quantas linhas possui a sua matriz? ");
                     var qntLinhas = Int32.Parse(Console.ReadLine());
-                    if (qntLinhas <= 1) throw new Exception("Por ser uma matriz quadrada, é necessário que possua pelo menos 2 linhas e 2 colunas.");
+                    if (qntLinhas <= 1) throw new SubMatrizesException("Por ser uma matriz quadrada, é necessário que possua pelo menos 2 linhas e 2 colunas.");
 
                     var linhas = new string[qntLinhas][];
 
                     for (int i = 0; i < qntLinhas; i++)
                     {
                         Console.Write($"{i + 1}ª Linha(Separe por virgulas): ");
-                        var linha = Console.ReadLine().Split(',');
+                        var linha = Console.ReadLine().Replace(" ", "").Split(',');
                         if (linha.Length != qntLinhas) throw new Exception("Por ser uma matriz quadrada, é necessário que a quantidade de colunas seja a mesma de linhas.");
                         linhas[i] = linha;
                     }
                     return linhas;
                 }
-                catch (Exception mt)
+                catch (SubMatrizesException mt)
                 {
                     Console.WriteLine(mt.Message);
                     continue;
@@ -79,15 +100,15 @@ namespace Submatrizes_CMTec.Calculos
                     Console.WriteLine("Insira a submatriz.");
                     Console.Write("Quantas linhas possui a submatriz? ");
                     var qntLinhas = Int32.Parse(Console.ReadLine());
-                    if (qntLinhas <= 1) throw new Exception("Por ser uma matriz quadrada, é necessário que possua pelo menos 2 linhas e 2 colunas.");
+                    if (qntLinhas <= 1) throw new SubMatrizesException("Por ser uma matriz quadrada, é necessário que possua pelo menos 2 linhas e 2 colunas.");
 
                     var linhas = new string[qntLinhas][];
 
                     for (int i = 0; i < qntLinhas; i++)
                     {
                         Console.Write($"{i + 1}ª Linha(Separe por virgulas): ");
-                        var linha = Console.ReadLine().Split(',');
-                        if (linha.Length != qntLinhas) throw new Exception("Por ser uma matriz quadrada, é necessário que a quantidade de colunas seja a mesma de linhas.");
+                        var linha = Console.ReadLine().Replace(" ", "").Split(',');
+                        if (linha.Length != qntLinhas) throw new SubMatrizesException("Por ser uma matriz quadrada, é necessário que a quantidade de colunas seja a mesma de linhas.");
                         linhas[i] = linha;
                     }
                     return linhas;
